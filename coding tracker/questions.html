@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coding Tracker - All Questions</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif;
+      font-size: small;
+      background-color: #f0f0f0;
+    }
+    
+    ul { list-style-type: none; padding: 0; }
+    li {margin: 5px 0; display: flex; justify-content: space-between; align-items: center; }
+    a { text-decoration: none; color: blue; }
+    a:hover { text-decoration: underline; }
+    #questionList {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Style each list item */
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style the question text */
+.question-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style the view link */
+.view-link {
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.view-link:hover {
+    background-color: #45a049;
+}
+
+/* Style the delete button */
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c62828;
+}
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Attempted Questions</h1>
+    <ul id="questionList"></ul>
+  </div>
+
+  <script src="questions.js"></script>
+</body>
+</html>
